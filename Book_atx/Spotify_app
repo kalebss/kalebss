@@ -14,8 +14,8 @@ client_secret = config.spotify_secret_id
 client_credentials_manager = SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-# https://open.spotify.com/playlist/5qiKyBjtLFJyPRDo8RfIiH?si=2ea59ff88bcc460d
-playlist_id='5qiKyBjtLFJyPRDo8RfIiH' #insert your playlist id
+# https://open.spotify.com/playlist/5qiKyBjtLFJyPRDo8RfIiH?si=2ea59ff88bcc460d playlist 
+playlist_id='5qiKyBjtLFJyPRDo8RfIiH' 
 results = sp.playlist(playlist_id)
 
 
@@ -87,11 +87,10 @@ headers = {
 }
 
 # make api request
-response = requests.get(url,headers=headers)
+# response = requests.get(url,headers=headers)
+response = requests.get(url)
 
-if response.status_code == 200:
-    # view api response as json
-    print(response.json())
-else:
-        print('Error', response.status_code)
+html_content = response.content
 
+with open('response.html','wb') as f:
+    f.write(html_content)
