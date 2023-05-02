@@ -7,7 +7,7 @@ current_date = date.today()
 current_date_str = current_date.strftime('%-Y-%-m-%-d')
 
 # input paths
-input_files =['/Users/kalebsaldana/Downloads/bquxjob_e251d1e_187c4a9356f.csv', '/Users/kalebsaldana/Downloads/bquxjob_1f8d37af_187c4a3572a.csv', '/Users/kalebsaldana/Downloads/bquxjob_6f768eea_187c4a06d81.csv','/Users/kalebsaldana/Downloads/bquxjob_dbd650c_187c49f0c68.csv','/Users/kalebsaldana/Downloads/bquxjob_6ce8a87a_187c49d74c3.csv']
+input_files =['file.csv']
 output_file = f"unioned_csv_{current_date_str}"
 
 def parse_timestamp(timestamp):
