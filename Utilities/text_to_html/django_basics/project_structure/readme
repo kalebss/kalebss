@@ -1,0 +1,25 @@
+
+
+Project: 
+A Django project is the highest-level container for your web application. It consists of multiple configuration files, settings, and applications. When you create a new Django project, it generates a project directory with the same name as your project.
+
+Applications: 
+A Django project is made up of one or more applications. An application represents a specific functionality of your web application, such as a blog, user authentication, or an e-commerce system. Each application can be reused in multiple projects. Django provides a command-line tool to create new applications within a project.
+
+Settings: 
+The settings module is a Python module that contains all the configuration settings for your Django project. It includes database connection details, installed applications, middleware settings, static and media file configurations, and much more. These settings define how your project behaves.
+
+URLs: 
+The URLs module is responsible for mapping URLs to corresponding views in your project. It contains a collection of URL patterns that define the structure of your application's URLs. When a request is made to your Django application, the URL patterns are matched, and the corresponding view function is called.
+
+Views: 
+Views in Django handle the logic for processing requests and returning responses. They receive requests, perform any necessary data retrieval or manipulation, and pass the processed data to templates or return JSON responses. Views can render templates or directly return responses, depending on your application's requirements.
+
+Templates: 
+Templates are responsible for the presentation layer in Django. They define the structure and layout of the HTML pages that will be sent to the client. Django's template engine allows you to dynamically generate HTML by embedding variables and control structures in the template files.
+
+Models: 
+Models represent the data structures and database schema for your application. They define the tables in the database, along with their fields and relationships. Django's ORM (Object-Relational Mapping) allows you to interact with the database using Python code, abstracting away the SQL queries.
+
+Static and Media: 
+Django provides support for managing static files (CSS, JavaScript, images) and media files (user-uploaded files). You can configure the static and media file directories in the settings module. Django also includes a built-in development server that can serve these files during development.
